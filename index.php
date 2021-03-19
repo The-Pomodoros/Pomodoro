@@ -9,5 +9,8 @@
   </head>
   <body>
     <?php include(__DIR__.'/left-div.php') ?>
+    <div class="right-div">
+      
+    </div>
   </body>
 </html>
