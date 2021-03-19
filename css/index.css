@@ -29,3 +29,9 @@
   height: 50px;
   padding-top:15px;
 }
+
+.nav-div a:hover{
+  text-decoration: underline;
+  text-decoration-style:dotted;
+  color: var(--secondaryDark);
+}
