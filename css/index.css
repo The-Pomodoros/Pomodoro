@@ -1,0 +1,31 @@
+.left-div{
+  background-color: #FCF7C9bf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px var(--primaryLight);
+  text-align: center;
+  height: 92vh;
+  width:25vw;
+  position:fixed;
+}
+
+.left-div img{
+  width:120px;
+  height: 120px;
+}
+
+.nav-div{
+  margin-top:100px;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  font-size:25px;
+  color:var(--primaryDark);
+  font-family: 'Indie Flower';
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+
+.nav-subdiv{
+  border-top: 3px solid black;
+  height: 50px;
+  padding-top:15px;
+}

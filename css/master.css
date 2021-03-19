@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url(../fonts/dancingscript.ttf);
+}
+
+@font-face {
+  font-family: "Indie Flower";
+  src: url(../fonts/indieflower.ttf);
+}
+
+@font-face {
+  font-family: "Abril Fatface";
+  src: url(../fonts/abrilfatface.ttf);
+}
+
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url(../fonts/comicsansms/comic.ttf);
+}
+
+@font-face{
+  font-family:'Calibri';
+  src:url(../fonts/calibri/calibri.ttf);
+}
+
+:root{
+  --primaryDark:#26001b;
+  --secondaryDark:#810034;
+  --primaryLight:#fff600;
+  --secondaryLight:#ff005c;
+  --white:#fff;
+  --black:#000;
+}
+
+body{
+  margin:30px;
+  padding:0px;
+  background-image: url(../Resources/background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Calibri';
+}
+
+div{
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0px;
+}
