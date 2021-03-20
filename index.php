@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="Resources/logo.ico">
-    <title>Pomodoro - The Productive Timer</title>
+    <title>Pomodoro - A Productivity Timer</title>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
