@@ -3,7 +3,7 @@
   <div class="nav-div">
     <a href="index.php">
       <div class="nav-subdiv">
-        Home
+        About
       </div>
     </a>
     <a href="timer.php">

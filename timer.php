@@ -34,7 +34,7 @@
       </div>
       <div class="timer-subdiv">
         <div class="timer">
-          00:00
+          25:00
         </div>
         <div class="timer-stats-div">
           <div>
@@ -50,21 +50,29 @@
       </div>
       <div class="timer-button-div">
         <div class="input-subdiv" style="font-size:18px;">
-          <h6>Checkmarkers</h6>
+          <h6>Checkmarkers in Each Set</h6>
           <input type="range" min='3' max='7' step='1' value="4">
           Set to 4 checkmarkers
         </div>
         <div class="timer-button-subdiv">
-          <div style="border:3px solid var(--primaryDark); font-size:38px; padding-top:0.47vh;">
-            START
+          <div class="button-parent-div">
+            <div>
+            </div>
+            <div class='button-div'>
+              START
+            </div>
+            <div>
+            </div>
           </div>
-          <div>
+          <div class="button-parent-div">
+            <div>
+            </div>
+            <div class='button-div'>
+              RESET
+            </div>
+            <div>
+            </div>
           </div>
-          <div style="border:3px solid var(--primaryDark); font-size:38px; padding-top:0.47vh;">
-            RESET
-          </div>
-        </div>
-        <div>
         </div>
     </div>
   </body>
