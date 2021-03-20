@@ -30,6 +30,7 @@
   --secondaryLight:#ff005c;
   --white:#fff;
   --black:#000;
+  --rangeBgColor:#FF96AB;
 }
 
 body{
@@ -56,7 +57,6 @@ a{
 
 ::-webkit-scrollbar {
   width: 1vw;
-  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track {
@@ -65,9 +65,103 @@ a{
 
 ::-webkit-scrollbar-thumb {
   background: #aa0029;
-  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondaryDark);
+}
+
+input[type=range]{
+  height: 39px;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type=range]:focus{
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track{
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: var(--rangeBgColor);
+  border-radius: 4px;
+  border: 2px solid var(--primaryDark);
+}
+
+input[type=range]::-webkit-slider-thumb{
+  border: 2px solid var(--primaryDark);
+  height: 30px;
+  width: 30px;
+  border-radius: 0px;
+  background: var(--rangeBgColor);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track{
+  background: var(--rangeBgColor);
+}
+
+input[type=range]::-moz-range-track{
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: var(--rangeBgColor);
+  border-radius: 4px;
+  border: 2px solid var(--primaryDark);
+}
+
+input[type=range]::-moz-range-thumb{
+  border: 2px solid var(--primaryDark);
+  height: 30px;
+  width: 30px;
+  border-radius: 0px;
+  background: var(--rangeBgColor);
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track{
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+}
+
+input[type=range]::-ms-fill-lower{
+  background: var(--rangeBgColor);
+  border: 2px solid var(--primaryDark);
+  border-radius: 8px;
+}
+
+input[type=range]::-ms-fill-upper{
+  background: var(--rangeBgColor);
+  border: 2px solid var(--primaryDark);
+  border-radius: 8px;
+}
+
+input[type=range]::-ms-thumb{
+  margin-top: 1px;
+  border: 2px solid var(--primaryDark);
+  height: 30px;
+  width: 30px;
+  border-radius: 0px;
+  background: var(--rangeBgColor);
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower{
+  background: var(--rangeBgColor);
+}
+
+input[type=range]:focus::-ms-fill-upper{
+  background: var(--rangeBgColor);
+}
+
+input[type=range]{
+  background-color: transparent;
 }

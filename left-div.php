@@ -1,12 +1,12 @@
 <div class="left-div">
   <img src="Resources/Logo.png"></img>
   <div class="nav-div">
-    <a href="#">
+    <a href="index.php">
       <div class="nav-subdiv">
         Home
       </div>
     </a>
-    <a href="#">
+    <a href="timer.php">
       <div class="nav-subdiv">
         Timer
       </div>

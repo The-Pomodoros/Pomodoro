@@ -54,3 +54,29 @@
   font-size:30px;
   color: var(--primaryDark);
 }
+
+.timer-div{
+  height: 83.8vh;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-gap: 1vw;
+}
+
+.input-div{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1vh;
+  text-align: center;
+  font-size: 18px;
+}
+
+.input-subdiv{
+  display: grid;
+  grid-auto-rows: repeat(3,1fr);
+}
+
+.input-div h6{
+  margin:0;
+  font-size: 20px;
+  padding: 0;
+}
