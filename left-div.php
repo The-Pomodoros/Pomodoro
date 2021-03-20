@@ -11,10 +11,10 @@
         Timer
       </div>
     </a>
-    <a href="#">
+    <!--a href="#">
       <div class="nav-subdiv">
         Statistics
       </div>
-    </a>
+    </a -->
   </div>
 </div>

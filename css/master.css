@@ -23,6 +23,11 @@
   src:url(../fonts/calibri/calibri.ttf);
 }
 
+@font-face{
+  font-family:'Cursed Timer';
+  src:url(../fonts/cursedtimer.ttf);
+}
+
 :root{
   --primaryDark:#26001b;
   --secondaryDark:#810034;

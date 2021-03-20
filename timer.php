@@ -33,7 +33,12 @@
         </div>
       </div>
       <div class="timer-subdiv">
-
+        <div class="timer">
+          88:88
+        </div>
+        <div class="timer-stats-div">
+          Stats
+        </div>
       </div>
       <div class="timer-button-div">
 
