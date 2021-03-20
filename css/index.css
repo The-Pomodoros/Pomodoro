@@ -45,11 +45,11 @@
   box-shadow: 0px 0px 20px var(--secondaryLight);
   border-radius: 50px;
   padding: 2vw;
-  color: var(--secondaryLight);
+  color: var(--secondaryDark);
   font-size: 18px;
 }
 
 .right-div h1{
   font-size:30px;
-  color: var(--secondaryDark);
+  color: var(--primaryDark);
 }
