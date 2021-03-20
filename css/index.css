@@ -132,8 +132,11 @@ h6{
   font-size: 38px;
   color: var(--primaryDark);
   cursor: pointer;
+  background-color: var(--secondaryLight);
+  transition:0.2s;
 }
 
 .button-div:hover{
-  color: var(--secondaryDark);
+  background-color: var(--secondaryDark);
+  transition:0.2s;
 }
