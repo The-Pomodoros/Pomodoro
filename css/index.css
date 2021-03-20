@@ -46,10 +46,11 @@
   border-radius: 50px;
   padding: 2vw;
   color: var(--secondaryDark);
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .right-div h1{
+  font-family: "Abril Fatface";
   font-size:30px;
   color: var(--primaryDark);
 }
