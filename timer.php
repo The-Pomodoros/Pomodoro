@@ -34,7 +34,7 @@
       </div>
       <div class="timer-subdiv">
         <div class="timer">
-          25:00
+          <div id='clock-time'>25:00</div>
         </div>
         <div class="timer-stats-div">
           <div>
@@ -58,7 +58,7 @@
           <div class="button-parent-div">
             <div>
             </div>
-            <div class='button-div'>
+            <div class='button-div' onclick="startTimer()" id='start-button'>
               START
             </div>
             <div>
@@ -67,13 +67,15 @@
           <div class="button-parent-div">
             <div>
             </div>
-            <div class='button-div'>
+            <div class='button-div' onclick="window.location.reload()" id='reset-button'>
               RESET
             </div>
             <div>
             </div>
           </div>
         </div>
+      </div>
     </div>
   </body>
+  <script type="text/javascript" src="js/index.js"></script>
 </html>

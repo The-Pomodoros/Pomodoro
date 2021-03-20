@@ -136,6 +136,4 @@ h6{
 
 .button-div:hover{
   color: var(--secondaryDark);
-  text-decoration: underline;
-  text-decoration-style: dotted;
 }
