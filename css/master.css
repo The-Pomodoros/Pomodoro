@@ -53,3 +53,21 @@ a{
   margin: 0;
   padding: 0px;
 }
+
+::-webkit-scrollbar {
+  width: 1vw;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primaryDark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dd003a;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondaryDark);
+}
