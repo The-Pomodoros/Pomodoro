@@ -4,13 +4,13 @@ The technique traditionally has working sessions of about 25 minutes followed by
 <hr/><hr/>
 
 ## Additional Features
-### The following features have been implemented (or will be made available in the first live release of the project):
+**The following features have been implemented (or will be made available in the first live release of the project):**
 * The website allows the users to customize the above mentioned time intervals as per their and their tasks' needs. It also suggests intervals for breaks to them based on the users' preferences of working intervals.
 
-### The following features are in our To-Do List but have not yet been incorporated into the website yet:
+**The following features are in our To-Do List but have not yet been incorporated into the website yet:**
 * The website has a 'statistics' page which summarizes various users' time utility.
 
-### The following feature have been thought of but not in our To-Do List as of now:
+**The following feature have been thought of but not in our To-Do List as of now:**
 * An additional minigames' section to allow users to engage themselves during their break intervals.
 <hr/>
 
