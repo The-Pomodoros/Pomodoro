@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="icon" href="Resources/logo.ico">
+    <link rel="icon" href="Resources/Logo.ico">
     <title>Pomodoro - A Productivity Timer</title>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/index.css">
