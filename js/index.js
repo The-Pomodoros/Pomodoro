@@ -4,9 +4,10 @@ var shortInt=parseInt(document.getElementById('shortBreak-ip').value);
 var longInt=parseInt(document.getElementById('longBreak-ip').value);
 var bufferInt=parseInt(document.getElementById('buffer-ip').value);
 var checkMark=parseInt(document.getElementById('checkmarkers-ip').value);
+var countMark=0,countPom=0,countSet=0;
 
-function startTimer(){
-  var state=document.getElementById('start-button').innerHTML.trim();
+function startTimer(state){
+  if (state=='0') state=document.getElementById('start-button').innerHTML.trim();
   if(state=='START'){
     var min,sec,interval;
     min=parseInt(document.getElementById('clock-time').innerHTML.trim().substring(0,2));
@@ -62,6 +63,35 @@ function startTimer(){
 
 function changeTimer(){
   clearInterval(tempInterval);
+
+  var interval=document.getElementById('clock-title').innerHTML.trim().substring(22,document.getElementById('clock-title').innerHTML.trim().indexOf('/')-1).trim().toLowerCase();
+  var min;
+
+  if(interval=='pomodoro'){
+    countMark++;
+    if(countMark!=checkMark){
+      interval='Short Break';
+      min=shortInt.toString();
+    }
+    else{
+      interval='Long Break';
+      min=longInt.toString();
+      countSet++;
+    }
+    countPom++;
+    document.getElementById('pom-span').innerHTML=countPom;
+    document.getElementById('set-span').innerHTML=countSet;
+  }
+  else{
+    interval='Pomodoro';
+    min=pomodoroInt.toString();
+    if(countMark==checkMark) countMark=0;
+  }
+  if(min.length<2) min='0'+min;
+  document.getElementById('check-span').innerHTML=countMark;
+  document.getElementById('clock-time').innerHTML=min+':00';
+  document.getElementById('clock-title').innerHTML='<h6>Current Interval: '+interval+'</h6>';
+  startTimer('START');
 }
 
 function pomodoro(){

@@ -37,15 +37,15 @@
           <div id="clock-title"><h6>Current Interval: Pomodoro</h6></div>
           <div id='clock-time'>25:00</div>
         </div>
-        <div class="timer-stats-div">
+        <div class="timer-stats-div" id='timer-stats'>
           <div>
-            <b>Pomodoros completed:</b> 0
+            <b>Pomodoros completed:</b> <span id='pom-span'>0</span>
           </div>
           <div>
-            <b>Sets completed:</b> 0
+            <b>Sets completed:</b> <span id='set-span'>0</span>
           </div>
           <div>
-            <b>Current checkmarker:</b> 0
+            <b>Current checkmarker:</b> <span id='check-span'>0</span>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
           <div class="button-parent-div">
             <div>
             </div>
-            <button class='button-div' onclick="startTimer()" id='start-button'>
+            <button class='button-div' onclick="startTimer('0')" id='start-button'>
               START
             </button>
             <div>
