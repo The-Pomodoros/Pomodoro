@@ -11,10 +11,5 @@
         About
       </div>
     </a>
-    <!--a href="#">
-      <div class="nav-subdiv">
-        Statistics
-      </div>
-    </a -->
   </div>
 </div>

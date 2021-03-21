@@ -59,18 +59,18 @@
           <div class="button-parent-div">
             <div>
             </div>
-            <div class='button-div' onclick="startTimer()" id='start-button'>
+            <button class='button-div' onclick="startTimer()" id='start-button'>
               START
-            </div>
+            </button>
             <div>
             </div>
           </div>
           <div class="button-parent-div">
             <div>
             </div>
-            <div class='button-div' onclick="window.location.reload()" id='reset-button'>
+            <button class='button-div' onclick="window.location.reload()" id='reset-button'>
               RESET
-            </div>
+            </button>
             <div>
             </div>
           </div>
