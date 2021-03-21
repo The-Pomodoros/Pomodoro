@@ -52,3 +52,47 @@ function startTimer(){
     document.getElementById('start-button').innerHTML='START';
   }
 }
+
+function checkmarkers(){
+  var value=document.getElementById('checkmarkers-ip').value;
+  document.getElementById('checkmarkers-div').innerHTML='Set to '+value+' checkmarkers';
+  clearInterval(tempInterval);
+  pomodoro();
+  document.getElementById('start-button').innerHTML='START';
+}
+
+function buffer(){
+  var value=document.getElementById('buffer-ip').value;
+  document.getElementById('buffer-div').innerHTML='Set to '+value+' minutes';
+  clearInterval(tempInterval);
+  pomodoro();
+  document.getElementById('start-button').innerHTML='START';
+}
+
+function longBreak(){
+  var value=document.getElementById('longBreak-ip').value;
+  document.getElementById('longBreak-div').innerHTML='Set to '+value+' minutes';
+  clearInterval(tempInterval);
+  pomodoro();
+  document.getElementById('start-button').innerHTML='START';
+}
+
+function shortBreak(){
+  var value=document.getElementById('shortBreak-ip').value;
+  document.getElementById('shortBreak-div').innerHTML='Set to '+value+' minutes';
+  clearInterval(tempInterval);
+  pomodoro();
+  document.getElementById('start-button').innerHTML='START';
+}
+
+function pomodoro(){
+  var value=document.getElementById('pomodoro-ip').value;
+  document.getElementById('pomodoro-div').innerHTML='Set to '+value+' minutes';
+
+  if(value.length<2){
+    value='0'+value;
+  }
+  document.getElementById('clock-time').innerHTML=value+':00';
+  clearInterval(tempInterval);
+  document.getElementById('start-button').innerHTML='START';
+}
