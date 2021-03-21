@@ -10,10 +10,12 @@ The technique traditionally has working sessions of about 25 minutes followed by
 
 ***The following features are in our To-Do List but have not yet been incorporated into the website yet:***
 * A buffer interval to allow users to extend other sessions if required by the users.
-* The website has a 'statistics' page which summarizes various users' time utility.
+* Implementation of UI Modes
+* Saving user settings
 
 ***The following feature have been thought of but not in our To-Do List as of now:***
 * An additional minigames' section to allow users to engage themselves during their break intervals.
+* The website has a 'statistics' page which summarizes various users' time utility.
 <hr/>
 
 ## Technologies Used
