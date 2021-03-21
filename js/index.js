@@ -1,4 +1,10 @@
 var tempInterval;
+var pomodoroInt=25;
+var shortInt=5;
+var longInt=15;
+var bufferInt=0;
+var check=0;
+
 function startTimer(){
   var state=document.getElementById('start-button').innerHTML.trim();
   if(state=='START'){

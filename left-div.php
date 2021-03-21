@@ -3,12 +3,12 @@
   <div class="nav-div">
     <a href="index.php">
       <div class="nav-subdiv">
-        About
+        Timer
       </div>
     </a>
-    <a href="timer.php">
+    <a href="about.php">
       <div class="nav-subdiv">
-        Timer
+        About
       </div>
     </a>
     <!--a href="#">

@@ -91,7 +91,15 @@ h6{
   padding-right: 2vw;
 }
 
-.timer{
+#clock-title{
+  padding-top:1.4vw;
+}
+
+#clock-title h6{
+  font-size:25px;
+}
+
+#clock-time{
   font-family: 'Cursed Timer';
   color: var(--primaryDark);
   font-size: 150px;

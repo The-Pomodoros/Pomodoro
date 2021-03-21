@@ -9,43 +9,74 @@
   </head>
   <body>
     <?php include(__DIR__.'/left-div.php') ?>
-    <div class="right-div">
-      <h1>What is Pomodoro Technique?</h1>
-      <p>
-      The Pomodoro Technique was developed by Francesco Cirillo, and is one of the more popular time management techniques.
-      The technique traditionally has working sessions of about 25 minutes followed by breaks of 4-5 minutes. Every fourth break is supposed to be a longer break of about 10-15 minutes.
-      The technique is called 'Pomodoro' as Cirillo used a Pomodoro-shaped (tomato-shaped) kitchen timer during his university days.
-      </p>
-    </div>
-    <div class="right-div">
-      <h1>How Does it work?</h1>
-      <p>
-        The technique consists of 6 steps:
-        <ol>
-          <li>Set the task</li>
-          <li>Set the pomodoro timer (traditionally to 25 minutes).</li>
-          <li>Work on the task.</li>
-          <li>End work when the timer rings and put a checkmarkr.</li>
-          <li>If one has fewer than four checkmarks, take a short break (3–5 minutes) and then return to step 2; else continue to the next step.</li>
-          <li>After four pomodoros, take a longer break (15–30 minutes), reset your checkmark count to zero, then go to step 1.</li>
-        </ol>
-      </p>
-    </div>
-    <div class="right-div">
-      <h1>Description</h1>
-      <p>
-        For the purposes of the technique, a pomodoro is the interval of time spent working.<br>
-        Regular breaks are taken, a short (3–5 minutes) rest separates consecutive
-        pomodoros. Four pomodoros form a set. A longer (15–30 minute) rest is taken between sets.
-      </p>
-      <p>
-        If any time remains after completion of the task using the Pomodoro technique, then it can be devoted to activities like:
-        <ul>
-          <li>Review and edit the work just completed.</li>
-          <li>Review the activities from a learning point of view: What did I learn? What could I do better or differently?</li>
-          <li>Review the list of upcoming tasks for the next planned Pomodoro time blocks, and start reflecting on or updating those tasks.</li>
-        </ul>
-      </p>
+    <div class="right-div timer-div">
+      <div class="input-div">
+        <div class="input-subdiv">
+          <h6>Pomodoro Interval</h6>
+          <input type="range" min='25' max='60' step='5' value="25" onchange="pomodoro()" id='pomodoro-ip'>
+          <div id='pomodoro-div'>Set to 25 minutes</div>
+        </div>
+        <div class="input-subdiv">
+          <h6>Short Break Interval</h6>
+          <input type="range" min='5' max='10' step='1' value="5" onchange="shortBreak()" id='shortBreak-ip'>
+          <div id='shortBreak-div'>Set to 5 minutes</div>
+        </div>
+        <div class="input-subdiv">
+          <h6>Long Break Interval</h6>
+          <input type="range" min='10' max='30' step='5' value="15" onchange='longBreak()' id='longBreak-ip'>
+          <div id='longBreak-div'>Set to 15 minutes</div>
+        </div>
+        <div class="input-subdiv">
+          <h6>Buffer Interval</h6>
+          <input type="range" min='0' max='5' step='1' value="0" onchange="buffer()" id='buffer-ip'>
+          <div id='buffer-div'>Set to 0 minutes</div>
+        </div>
+      </div>
+      <div class="timer-subdiv">
+        <div class="timer">
+          <div id="clock-title"><h6>Current Interval: Pomodoro</h6></div>
+          <div id='clock-time'>25:00</div>
+        </div>
+        <div class="timer-stats-div">
+          <div>
+            <b>Pomodoros completed:</b> 0
+          </div>
+          <div>
+            <b>Sets completed:</b> 0
+          </div>
+          <div>
+            <b>Current checkmarker:</b> 0
+          </div>
+        </div>
+      </div>
+      <div class="timer-button-div">
+        <div class="input-subdiv" style="font-size:18px;">
+          <h6>Checkmarkers in Each Set</h6>
+          <input type="range" min='3' max='7' step='1' value="4" onchange='checkmarkers()' id='checkmarkers-ip'>
+          <div id='checkmarkers-div'>Set to 4 checkmarkers</div>
+        </div>
+        <div class="timer-button-subdiv">
+          <div class="button-parent-div">
+            <div>
+            </div>
+            <div class='button-div' onclick="startTimer()" id='start-button'>
+              START
+            </div>
+            <div>
+            </div>
+          </div>
+          <div class="button-parent-div">
+            <div>
+            </div>
+            <div class='button-div' onclick="window.location.reload()" id='reset-button'>
+              RESET
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
+  <script type="text/javascript" src="js/index.js"></script>
 </html>
