@@ -9,6 +9,7 @@ The technique traditionally has working sessions of about 25 minutes followed by
 * The website allows the users to customize the above mentioned time intervals as per their and their tasks' needs.
 
 ***The following features are in our To-Do List but have not yet been incorporated into the website yet:***
+* A buffer interval to allow users to extend other sessions if required by the users.
 * The website has a 'statistics' page which summarizes various users' time utility.
 
 ***The following feature have been thought of but not in our To-Do List as of now:***
