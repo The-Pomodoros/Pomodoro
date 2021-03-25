@@ -27,3 +27,9 @@ The technique traditionally has working sessions of about 25 minutes followed by
 
 ## Live Version
 The website is live over [here](http://pomodoro.devus.org).
+
+## Contributors' GitHub Profiles
+* [Devjyot Singh Sidhu](https://github.com/DevoGHub)
+* [Saanchi Gangwani](https://github.com/saanchi-gangwani)
+* [Saakshi Mittal](https://github.com/saakshimittal)
+* [Siddarth Nayar](https://github.com/siddarth-nayar)
