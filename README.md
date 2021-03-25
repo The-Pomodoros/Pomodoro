@@ -26,4 +26,4 @@ The technique traditionally has working sessions of about 25 minutes followed by
 <hr/>
 
 ## Live Version
-The website is live over [here](http://pomodoro.devus.org).
+The website is not live yet but will soon be over [here](http://pomodoro.devus.org).
