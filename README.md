@@ -15,7 +15,7 @@ The technique traditionally has working sessions of about 25 minutes followed by
 
 ***The following feature have been thought of but not in our To-Do List as of now:***
 * An additional minigames' section to allow users to engage themselves during their break intervals.
-* The website has a 'statistics' page which summarizes various users' time utility.
+* The website has been discussed to have a 'statistics' page which summarizes various users' time utility.
 <hr/>
 
 ## Technologies Used
@@ -26,4 +26,4 @@ The technique traditionally has working sessions of about 25 minutes followed by
 <hr/>
 
 ## Live Version
-The website is live over [here](http://pomodoro.devus.org)
+The website is live over [here](http://pomodoro.devus.org).
