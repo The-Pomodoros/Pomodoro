@@ -52,7 +52,7 @@ function startTimer(state){
       else{
         sec--;
       }
-    },1000);
+    },10);
     document.getElementById('start-button').innerHTML='STOP';
   }
   else{
@@ -95,44 +95,44 @@ function changeTimer(){
 }
 
 function pomodoro(){
-  var value=document.getElementById('pomodoro-ip').value;
-  document.getElementById('pomodoro-div').innerHTML='Set to '+value+' minutes';
+  pomodoroInt=parseInt(document.getElementById('pomodoro-ip').value);
+  document.getElementById('pomodoro-div').innerHTML='Set to '+pomodoroInt+' minutes';
 
   if(value.length<2){
     value='0'+value;
   }
-  document.getElementById('clock-time').innerHTML=value+':00';
+  document.getElementById('clock-time').innerHTML=pomodoroInt+':00';
   clearInterval(tempInterval);
   document.getElementById('start-button').innerHTML='START';
 }
 
 function shortBreak(){
-  var value=document.getElementById('shortBreak-ip').value;
-  document.getElementById('shortBreak-div').innerHTML='Set to '+value+' minutes';
+  shortInt=parseInt(document.getElementById('shortBreak-ip').value);
+  document.getElementById('shortBreak-div').innerHTML='Set to '+shortInt+' minutes';
   clearInterval(tempInterval);
   pomodoro();
   document.getElementById('start-button').innerHTML='START';
 }
 
 function longBreak(){
-  var value=document.getElementById('longBreak-ip').value;
-  document.getElementById('longBreak-div').innerHTML='Set to '+value+' minutes';
+  longBreak=parseInt(document.getElementById('longBreak-ip').value);
+  document.getElementById('longBreak-div').innerHTML='Set to '+longInt+' minutes';
   clearInterval(tempInterval);
   pomodoro();
   document.getElementById('start-button').innerHTML='START';
 }
 
 function buffer(){
-  var value=document.getElementById('buffer-ip').value;
-  document.getElementById('buffer-div').innerHTML='Set to '+value+' minutes';
+  bufferInt=parseInt(document.getElementById('buffer-ip').value);
+  document.getElementById('buffer-div').innerHTML='Set to '+bufferInt+' minutes';
   clearInterval(tempInterval);
   pomodoro();
   document.getElementById('start-button').innerHTML='START';
 }
 
 function checkmarkers(){
-  var value=document.getElementById('checkmarkers-ip').value;
-  document.getElementById('checkmarkers-div').innerHTML='Set to '+value+' checkmarkers';
+  checkMark=parseInt(document.getElementById('checkmarkers-ip').value);
+  document.getElementById('checkmarkers-div').innerHTML='Set to '+checkMark+' checkmarkers';
   clearInterval(tempInterval);
   pomodoro();
   document.getElementById('start-button').innerHTML='START';
