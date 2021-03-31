@@ -116,7 +116,7 @@ function shortBreak(){
 }
 
 function longBreak(){
-  longBreak=parseInt(document.getElementById('longBreak-ip').value);
+  longInt=parseInt(document.getElementById('longBreak-ip').value);
   document.getElementById('longBreak-div').innerHTML='Set to '+longInt+' minutes';
   clearInterval(tempInterval);
   pomodoro();
