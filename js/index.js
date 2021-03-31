@@ -102,7 +102,13 @@ function pomodoro(){
   if(value.length<2){
     value='0'+value;
   }
+  countPom=0;
+  countSet=0;
+  countMark=0;
   document.getElementById('clock-time').innerHTML=pomodoroInt+':00';
+  document.getElementById('pom-span').innerHTML=countPom;
+  document.getElementById('set-span').innerHTML=countSet;
+  document.getElementById('check-span').innerHTML=countMark;
   clearInterval(tempInterval);
   document.getElementById('start-button').innerHTML='START';
 }
