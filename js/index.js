@@ -98,6 +98,7 @@ function pomodoro(){
   pomodoroInt=parseInt(document.getElementById('pomodoro-ip').value);
   document.getElementById('pomodoro-div').innerHTML='Set to '+pomodoroInt+' minutes';
 
+  value=toString(pomodoroInt);
   if(value.length<2){
     value='0'+value;
   }
