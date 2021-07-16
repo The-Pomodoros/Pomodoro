@@ -52,7 +52,7 @@ function startTimer(state){
       else{
         sec--;
       }
-    },10);
+    },1000);
     document.getElementById('start-button').innerHTML='STOP';
   }
   else{
