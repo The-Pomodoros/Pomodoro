@@ -15,6 +15,7 @@ function startTimer(state){
     interval=document.getElementById('clock-title').innerHTML.trim().substring(22,document.getElementById('clock-title').innerHTML.trim().indexOf('/')-1).trim();
 
     if(sec==0 && min==0){
+      document.getElementById('notif').play();
       alert('The time for the current '+interval.toLowerCase()+' has been completed'); //change for buffer implementation
       changeTimer();
     }
@@ -40,6 +41,7 @@ function startTimer(state){
       }
       document.getElementById('clock-time').innerHTML=mins+':'+secs;
       if(sec==0 && min==0){
+        document.getElementById('notif').play();
         alert('The time for the current '+interval.toLowerCase()+' has been completed'); //change for buffer implementation
         changeTimer()
       }
