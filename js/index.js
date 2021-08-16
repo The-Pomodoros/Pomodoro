@@ -41,7 +41,7 @@ function startTimer(state){
       document.getElementById('clock-time').innerHTML=mins+':'+secs;
       if(sec==0 && min==0){
         alert('The time for the current '+interval.toLowerCase()+' has been completed'); //change for buffer implementation
-        changeTimer()
+        changeTimer();
       }
 
       else if(sec==0 && min!=0){
