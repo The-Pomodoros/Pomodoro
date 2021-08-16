@@ -36,6 +36,10 @@
   color: var(--secondaryDark);
 }
 
+audio{
+  display: none;
+}
+
 .right-div{
   overflow-y: auto;
   width:63vw;
